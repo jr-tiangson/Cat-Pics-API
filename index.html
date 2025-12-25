@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>TheCatAPI — Cat Pictures</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1 style="color: rgb(11, 175, 11);">TheCatAPI — Cat Pictures</h1>
+  <div class="controls">
+    <form id="searchForm" class="search-form" aria-label="Search breeds">
+      <input id="searchInput" type="search" placeholder="Search breed (e.g. sphynx)" aria-label="Breed search" />
+      <button id="searchBtn" type="submit">Search</button>
+    </form>
+    <div class="mini-controls">
+      <select id="breedSelect" aria-label="Select breed">
+        <option value="">-- Select a breed --</option>
+      </select>
+      <button id="randomBtn" title="Random cat image">Random Cat</button>
+      <button id="darkToggle" aria-pressed="false" title="Toggle dark mode">🌙</button>
+    </div>
+  </div>
+</header>
+
+<div id="statusContainer" class="status-container" aria-live="polite"></div>
+
+<main>
+  <section id="results" class="results-grid" aria-live="polite"></section>
+</main>
+
+<footer class="footer">
+  <p>API Source: <a href="https://api.thecatapi.com" target="_blank" rel="noopener">TheCatAPI</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
